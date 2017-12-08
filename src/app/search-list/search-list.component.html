@@ -1,0 +1,37 @@
+
+<!-- <div class="card" style="width: 20rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> -->
+<!-- <div>
+  {{recipeList.length}}
+  <ul class="list-group" *ngFor= "let rec of recipeList">
+    <li class="list-group-item">
+        <span class="pull-left ">
+            <img src="{{rec.thumbnail}}"  class="img-reponsive img-rounded" />
+        </span>
+      {{rec.title}}
+    </li>
+  </ul>
+</div> -->
+<div class="row" style="margin-top: 50px;">
+  <div class="col-md-2 recipe-card"  *ngFor= "let rec of recipeList">
+  <div class = "card recipe-card">
+    <img class="card-img-top" src="{{rec.thumbnail}}" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">{{rec.title}}</h4>
+      <p class="card-text block-with-text">{{rec.ingredients}}</p>
+      
+    </div>
+    <div class="card-footer text-muted">
+        <a href="{{rec.href}}" class="btn btn-primary" target="_blank">View Recipe</a>
+      </div>
+</div>
+</div> 
+
+</div>
+

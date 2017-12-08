@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <app-search (onbtnClicked) = "searchRecipe($event)"></app-search>
+  <app-search-list [recipeList]= "data"></app-search-list>
+</div>
+<div class="alert alert-warning" *ngIf="data.length<1 && isSearched==true">
+    No Recipe found.
+</div>
+
+

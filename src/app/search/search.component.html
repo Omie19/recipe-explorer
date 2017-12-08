@@ -1,0 +1,36 @@
+<div class="container" style="margin-top: 50px;">
+    <div class="col-md-6 col-md-offset-3">
+
+        <!-- Search Form -->
+        <form role="form">
+        
+        <!-- Search Field -->
+            <div class="row form-inline">
+                <h1 class="text-center">Search Your Recipe</h1>
+                <div class="form-group">
+                    <div class="input-group col-lg-4">
+                        <input class="form-control" type="text" [(ngModel)]="searchvalue" name="search" placeholder="e.g:'garlic'" required/>
+                        
+                    </div>
+                    <div class="input-group col-lg-6">
+                        <input class="form-control" type="text" [(ngModel)]="searchdish" name="search" placeholder="e.g:'omelette'" optional/>
+                        <span class="input-group-btn">
+                            <button class="btn btn-success" (click)="Searchtext(searchvalue,searchdish)"><span class="glyphicon glyphicon-search" aria-hidden="true"><span style="margin-left:10px;">Search</span></span></button>                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+        <!-- End of Search Form -->
+            
+    </div>
+</div>
+
+
+<!-- 
+<div>
+  <label>Search Recipe</label>
+  <input type="text" [(ngModel)]="searchvalue" placeholder="e.g:'onion'">
+    <button (click)="Searchtext(searchvalue)">Search Recipe</button>
+</div> -->
